@@ -1,5 +1,4 @@
-  
-                          var text = document.getElementById("content");
+var text = document.getElementById("content");
 
 var button = document.getElementsByClassName("button-more")
 
@@ -16,9 +15,10 @@ function toggle(button) {
 
 	text.classList.toggle("show");
 
-	if (button.innerHTML == "Mostrar Mais")
-		button.innerHTML = "Mostrar Menos";
-	else if (button.innerHTML == "Mostrar Menos")
-		button.innerHTML = "Mostrar Mais";
+	if (button.innerHTML == "Mais")
+		button.innerHTML = "Menos";
+	else if (button.innerHTML == "Menos")
+		button.innerHTML = "Mais";
 	else
-		
+		button.innerHTML = "Mais";
+}
